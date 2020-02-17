@@ -1,0 +1,17 @@
+<div class="container">
+  <div fxLayout="row" fxLayoutAlign="center center" class="content">
+    <table>
+      <thead>
+      <tr>
+        <th *ngFor="let head of displayedColumns" scope="col">{{head}} </th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr mdbTableCol *ngFor="let el of bids">
+        <th scope="row">{{el.auctionId}}</th>
+        <td>{{el.bidPrice}}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

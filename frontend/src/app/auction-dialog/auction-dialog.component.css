@@ -1,0 +1,13 @@
+.auction-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auction-form > * {
+  width: 100%;
+}
+
+.close{
+  width: 100%;
+}
+

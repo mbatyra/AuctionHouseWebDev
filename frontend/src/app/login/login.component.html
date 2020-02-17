@@ -1,0 +1,10 @@
+<form class="bid-form" style="padding-left: 30px;" (ngSubmit)="login()">
+  <mat-form-field>
+    <textarea matInput placeholder="Login" required [(ngModel)]="user.login" name="login"></textarea>
+  </mat-form-field>
+
+  <mat-form-field>
+    <textarea matInput placeholder="Password" required [(ngModel)]="user.password" name="password"></textarea>
+  </mat-form-field>
+  <button mat-raised-button type="submit" color="primary">Login</button>
+</form>

@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="container">
+    <div fxLayout="column" fxLayoutGap="20px" fxLayout.gt-md="row"  fxLayoutAlign="space-around center" class="content">
+      <div class="row">
+        <button button="submit" mat-raised-button color="primary" (click)="openDialog()">
+          <mat-icon>add</mat-icon> Add Post
+        </button>
+      </div>
+      <div class="blocks">
+        <button button="submit" mat-raised-button color="primary" (click)="bidDialog()">
+          <mat-icon>add</mat-icon> Add Bid
+        </button>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="container">
+    <div fxLayout="row" fxLayoutAlign="center center" class="content">
+      <table>
+        <thead>
+        <tr>
+          <th *ngFor="let head of displayedColumns" scope="col">{{head}} </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr mdbTableCol *ngFor="let el of auctions">
+          <th scope="row">{{el.description}}</th>
+          <td>{{el.actualPrice}}</td>
+          <td>{{el.buyOutPrice}}</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,13 @@
+.bid-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.bid-form > * {
+  width: 100%;
+}
+
+.close{
+  width: 100%;
+}
+
